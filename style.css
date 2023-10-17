@@ -1,33 +1,34 @@
-/* Remove the default margin and padding from the body. */
-body {
-    padding: 0;
-    margin: 0;
-  }
-  
-  /* Set map, body, and html to 100% of the screen size. */
-  #map,
-  body,
-  html {
-    height: 100%;
-  }
-  
-/* .info.legend {
-    background-color: white;
-} */ 
+/* Global reset to remove default margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* Define text data for depth */
+/* Set html and body to 100% height to allow child elements to expand fully */
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Set map to 100% of its parent's size. */
+#map {
+  height: 100%;
+  width: 100%;
+}
+
+/* Styles for the legend */
 .legend {
-    line-height: 18px;
-    color: black;
-    background-color: white;
-    padding: 10px;
-    border-radius: 8px;
-  }
-  
-  /* Define box information to hold the colors in the legend */
-  .legend i {
-    width: 18px;
-    height: 18px;
-    float: left;
-    margin-right: 8px;
-  }
+  background-color: white;
+  border-radius: 8px;
+  padding: 10px;
+  line-height: 18px;
+  color: black;
+}
+
+.legend i {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  float: left;
+}
